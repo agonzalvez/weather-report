@@ -19,6 +19,7 @@ function handleSearchFormSubmit(event) {
        }
     
     getWeather();
+    // renderLastSearch()
 };
 
 //Search button event listener
@@ -49,12 +50,23 @@ function getWeather() {
         });
 }
 
+// $("#city1 + .form-control").val(localStorage.getItem("City"))
+// $("#city2 + .form-control").val(localStorage.getItem("City"))
+// $("#city3 + .form-control").val(localStorage.getItem("City"))
+// $("#city4 + .form-control").val(localStorage.getItem("City"))
+// $("#city5 + .form-control").val(localStorage.getItem("City"))
+// $("#city6 + .form-control").val(localStorage.getItem("City"))
+// $("#city7 + .form-control").val(localStorage.getItem("City"))
+// $("#city8 + .form-control").val(localStorage.getItem("City"))
+// $("#city9 + .form-control").val(localStorage.getItem("City"))
+// $("#city10 + .form-control").val(localStorage.getItem("City"))
 
-// Local Storage
+
+// // Local Storage
 
 // function renderLastSearch() {
 // searchInputVal = document.querySelector('.form-control').value;
 // localStorage.getItem("City");
-//   searchHistory.li.appendChild = searchInputVal
+//   searchHistory.ul.textContent = searchInputVal
 //   }
 
