@@ -13,6 +13,7 @@ function handleSearchFormSubmit(event) {
 
     if (!searchInputVal) {
         console.error('You need to enter a city!');
+        alert('You need to enter a city')
         return;
     }else {    
         localStorage.setItem("City", searchInputVal);

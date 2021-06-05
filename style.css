@@ -41,6 +41,10 @@
       font-size:4rem;
   }
   
+  .bg-dark {
+    /* background-color: #1270ce!important; */
+    background-image: linear-gradient(to right, #1270ce, white);
+}
 
 
 /* Search button styling */
@@ -55,8 +59,9 @@
 
 #weather-result{
     text-align: center;
-    border: solid;
-    border-width: 1px;
+    border-left: solid;
+    border-width: 5px;
+    border-color: #1270ce;
 }
 
 #currentCity{
@@ -81,11 +86,12 @@
 /* Search history section */
 
 #search-history{
-    border:solid;
+    border:none;
     border-width: 1px;
 }
 
 /* 5-day forecast section */
+
 
 #day1{
     
