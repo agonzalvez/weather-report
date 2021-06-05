@@ -24,13 +24,23 @@ searchButton.addEventListener('click', handleSearchFormSubmit);
 // Open weather API call
 
 function getWeather() {
-    let openWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&appid=" + key;
+    let openWeather = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + '&units=imperial' + "&appid=" + key;
     console.log(openWeather)
     $.ajax({
         'url': openWeather,
         'method': 'GET',
     }).then(function (response) {
+        console.log('Ajax Reponse \n-------------');
         console.log(response);
+        console.log(response.name);
+        console.log(response.main.temp);
+        console.log(response.main.humidity);
+        console.log(response.wind.speed);
+        $('#selectedCity').text(response.name);
+        $('#currentTemp').text('Temperature: ' + response.main.temp + ' degrees');
+        $('#currentWind').text('Wind: ' + response.main.humidity);
+        $('#currentHum').text('Humidity: ' + response.wind.speed);
+        $('#currentUV').text('UV Index: ' + response.current.uvi);
       })
       .catch(function(err) {
           console.error(err);

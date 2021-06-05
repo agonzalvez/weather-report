@@ -42,6 +42,25 @@
     border-width: 1px;
 }
 
+#currentCity{
+    text-align: left;
+}
+
+#currentTemp{
+    text-align: left;
+}
+
+#currentWind{
+    text-align: left;
+}
+
+#currentHum{
+    text-align: left;
+}
+
+#currentUV{
+    text-align: left;
+}
 /* Search history section */
 
 #search-history{
@@ -52,31 +71,26 @@
 /* 5-day forecast section */
 
 #day1{
-    border:solid;
-    border-width: 1px;
+    
     text-align: center;
 }
 
 #day2{
-    border:solid;
-    border-width: 1px;
+   
     text-align: center;
 }
 
 #day3{
-    border:solid;
-    border-width: 1px;
+   
     text-align: center;
 }
 
 #day4{
-    border:solid;
-    border-width: 1px;
+    
     text-align: center;
 }
 
 #day5{
-    border:solid;
-    border-width: 1px;
+    
     text-align: center;
 }
