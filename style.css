@@ -1,3 +1,5 @@
+/* Bootstrap styling */
+
 .b-example-divider {
     height: 3rem;
     background-color: rgba(0, 0, 0, .1);
@@ -31,3 +33,50 @@
     outline: 0;
   }
   
+
+/* Main result section */
+
+#weather-result{
+    text-align: center;
+    border: solid;
+    border-width: 1px;
+}
+
+/* Search history section */
+
+#search-history{
+    border:solid;
+    border-width: 1px;
+}
+
+/* 5-day forecast section */
+
+#day1{
+    border:solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+#day2{
+    border:solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+#day3{
+    border:solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+#day4{
+    border:solid;
+    border-width: 1px;
+    text-align: center;
+}
+
+#day5{
+    border:solid;
+    border-width: 1px;
+    text-align: center;
+}
