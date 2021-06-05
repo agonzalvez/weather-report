@@ -26,7 +26,7 @@
 
         <div class="px-3 py-2 border-bottom mb-3">
             <div class="container d-flex flex-wrap justify-content-center">
-                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" id="search-bar">
+                <form class="col-12 col-lg-auto mb-2 mb-lg-0 d-flex" id="search-bar">
                     <input type="search" class="form-control" placeholder="Search for a city..." aria-label="Search">
                     <button id="searchBtn">Search</button>
                 </form>
@@ -34,10 +34,22 @@
         </div>
     </header>
 
-    <div class="row col-12 col-lg-auto justify-content-end container">
+    <div class="row col-12 col-lg-auto justify-content-center container1 m-4">
         <div class="row">
             <div class="col-2" id="search-history">
-                Search History
+                <h4>Search History</h3>
+                    <ul id="searched-city">
+                        <li id="city1">city</li>
+                        <li id="city2">city</li>
+                        <li id="city3">city</li>
+                        <li id="city4">city</li>
+                        <li id="city5">city</li>
+                        <li id="city6">city</li>
+                        <li id="city7">city</li>
+                        <li id="city8">city</li>
+                        <li id="city9">city</li>
+                        <li id="city10">city</li>
+                    </ul>
             </div>
             <div class="col-10" id="weather-result">
                 <h3>Weather Report</h3>
@@ -46,26 +58,27 @@
                 <p id="currentWind">Wind:</p>
                 <p id="currentHum">Humidity:</p>
                 <p id="currentUV">UV Index:</p>
-            </div>
-            <div class="container overflow-hidden col-10 d-flex flex-wrap justify-content-end m-0" id="days">
-                <div class="row gx-5">
-                    <div class="col-2" id="day1">
-                        <div class="p-3 border bg-light">Day 1</div>
-                    </div>
-                    <div class="col-2" id="day2">
-                        <div class="p-3 border bg-light">Day 2</div>
-                    </div>
-                    <div class="col-2" id="day3">
-                        <div class="p-3 border bg-light">Day 3</div>
-                    </div>
-                    <div class="col-2" id="day4">
-                        <div class="p-3 border bg-light">Day 4</div>
-                    </div>
-                    <div class="col-2" id="day5">
-                        <div class="p-3 border bg-light">Day 5</div>
+                <div class="container overflow-hidden col-10 d-flex flex-wrap justify-content-end m-0" id="days">
+                    <div class="row gx-5">
+                        <div class="col-2" id="day1">
+                            <div class="p-3 border bg-light">Day 1</div>
+                        </div>
+                        <div class="col-2" id="day2">
+                            <div class="p-3 border bg-light">Day 2</div>
+                        </div>
+                        <div class="col-2" id="day3">
+                            <div class="p-3 border bg-light">Day 3</div>
+                        </div>
+                        <div class="col-2" id="day4">
+                            <div class="p-3 border bg-light">Day 4</div>
+                        </div>
+                        <div class="col-2" id="day5">
+                            <div class="p-3 border bg-light">Day 5</div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 

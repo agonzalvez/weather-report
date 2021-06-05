@@ -19,6 +19,10 @@
     border-color: #fff;
     box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
   }
+
+  .form-control{
+      width:400px;
+  }
   
   .bi {
     vertical-align: -.125em;
@@ -32,8 +36,21 @@
   .dropdown-toggle {
     outline: 0;
   }
+
+  #header-title{
+      font-size:4rem;
+  }
   
 
+
+/* Search button styling */
+#searchBtn{
+    border: solid;
+    border-radius: 10px;
+    background-color: rgb(27, 91, 186);
+    color: white;
+    padding:0.5rem;
+}
 /* Main result section */
 
 #weather-result{
