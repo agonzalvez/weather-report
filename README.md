@@ -13,8 +13,9 @@ This application will allow the user to enter a location(city) of their choice, 
 - Created function to obtain current temperature, wind speed, humidity and UV index
 - Created function where recently searched cities will be rendered on the Search History section
 - Created function to dynamically generated cards for a five-day forecast
+- Created an alert that will be trigerred should the user not enter a city on the search bar
 
 ## Usage:
 
 - Link to application: https://agonzalvez.github.io/weather-report/
-- App screenshot(s):
+- App screenshot(s): ![Landing-page](assets/Screen Shot 2021-06-07 at 8.49.56 PM.png)
