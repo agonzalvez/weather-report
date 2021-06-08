@@ -9,6 +9,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/headers/">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Weather Dashboard</title>
 </head>
@@ -17,8 +18,8 @@
 
     <header>
         <div class="px-3 py-2 bg-dark text-white">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+            <div class="container mx-1">
+                <div class="d-flex flex-wrap align-items-center justify-content-lg-between">
                     <h1 id="header-title">Weather Dashboard</h1>
                 </div>
             </div>
@@ -37,46 +38,57 @@
     <div class="row col-12 col-lg-auto justify-content-center container1 m-4">
         <div class="row">
             <div class="col-2" id="search-history">
-                <h4>Search History</h3>
+                <h4>Search History</h4>
                     <ul id="searched-city">
-                        <li id="city1">city</li>
-                        <li id="city2">city</li>
-                        <li id="city3">city</li>
-                        <li id="city4">city</li>
-                        <li id="city5">city</li>
-                        <li id="city6">city</li>
-                        <li id="city7">city</li>
-                        <li id="city8">city</li>
-                        <li id="city9">city</li>
-                        <li id="city10">city</li>
                     </ul>
             </div>
             <div class="col-10" id="weather-result">
                 <h3>Weather Report</h3>
-                <h5 id="selectedCity">City</h5>
+                <h5 id="selectedCity"></h5>
                 <p id="currentTemp">Temperature:</p>
                 <p id="currentWind">Wind:</p>
                 <p id="currentHum">Humidity:</p>
                 <p id="currentUV">UV Index:</p>
-                <div class="container overflow-hidden col-10 d-flex flex-wrap justify-content-end m-0" id="days">
-                    <div class="row gx-5">
+                <div class="container overflow-hidden col-12 d-flex flex-wrap justify-content-center" id="days">
+                    <h4>5-Day Forecast</h4>
+                    <!-- <div class="row justify-content-center gx-5">
                         <h4 id="forecastTitle">5-day Forecast</h4>
-                        <div class="col-2" id="day1">
-                            <div class="p-3 border bg-light">Day 1</div>
+                        <div class="col-2 mx-3" id="day1">
+                            <div class="p-3 ">Day 1
+                                <p id="futureTemp1">test</p>
+                                <p id="futureWind1">test</p>
+                                <p id="futureHum1">test</p>
+                            </div>
                         </div>
-                        <div class="col-2" id="day2">
-                            <div class="p-3 border bg-light">Day 2</div>
+                        <div class="col-2 mx-3" id="day2">
+                            <div class="p-3">Day 2
+                                <p id="futureTemp2">test</p>
+                                <p id="futureWind2">test</p>
+                                <p id="futureHum2">test</p>
+                            </div>
                         </div>
-                        <div class="col-2" id="day3">
-                            <div class="p-3 border bg-light">Day 3</div>
+                        <div class="col-2 mx-3" id="day3">
+                            <div class="p-3">Day 3
+                                <p id="futureTemp3">test</p>
+                                <p id="futureWind3">test</p>
+                                <p id="futureHum3">test</p>
+                            </div>
                         </div>
-                        <div class="col-2" id="day4">
-                            <div class="p-3 border bg-light">Day 4</div>
+                        <div class="col-2 mx-3" id="day4">
+                            <div class="p-3">Day 4
+                                <p id="futureTemp4">test</p>
+                                <p id="futureWind4">test</p>
+                                <p id="futureHum4">test</p>
+                            </div>
                         </div>
-                        <div class="col-2" id="day5">
-                            <div class="p-3 border bg-light">Day 5</div>
+                        <div class="col-2 mx-3" id="day5">
+                            <div class="p-3">Day 5
+                                <p id="futureTemp5">test</p>
+                                <p id="futureWind5">test</p>
+                                <p id="futureHum5">test</p>
+                            </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -91,6 +103,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 
