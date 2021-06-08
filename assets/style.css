@@ -84,6 +84,32 @@
 #currentUV{
     text-align: left;
 }
+
+.uvGood{
+    background-color:green;
+    color:white;
+    border: solid;
+    padding-left: 5px;
+    border-radius: 20px;
+    margin-right: 88%;
+}  
+
+.uvModerate{
+    background-color: rgb(237, 192, 14);
+    color:white;
+    border: solid;
+    padding-left: 5px;
+    border-radius: 20px;
+    margin-right: 88%;
+} 
+.uvDanger{
+    background-color:darkred;
+    color:white;
+    border: solid;
+    padding-left: 5px;
+    border-radius: 20px;
+    margin-right: 88%;
+}
 /* Search history section */
 
 #search-history{
@@ -99,6 +125,8 @@
     color: white;
     border-radius: 10px; 
 }
+
+
 
 /* #day1{
     

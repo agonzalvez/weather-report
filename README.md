@@ -20,3 +20,5 @@ This application will allow the user to enter a location(city) of their choice, 
 - Link to application: https://agonzalvez.github.io/weather-report/
 - App screenshot(s): 
 ![Landing-page](assets/landing-page.png)
+![forecast-result](assets/forecast.png)
+![alert](assets/alert.png)

@@ -3,6 +3,7 @@ let searchButton = document.querySelector('#searchBtn');
 let searchInput = document.querySelector('.form-control');
 let searchHistory = document.querySelector('#search-history');
 let forecast = $('#days');
+let currentUVI = document.querySelector('#currentUV')
 let today = moment().format('L');
 
 
@@ -77,6 +78,13 @@ function getUvi(lat, lon) {
         method: 'GET',
     }).then(function (response) {
         $('#currentUV').text('UV Index: ' + response.current.uvi);
+        if (response.current.uvi < 5){
+            currentUVI.classList.add('uvGood');
+          }else if (response.current.uvi > 5 && response.current.uvi <= 7){
+            currentUVI.classList.add('uvModerate');
+          }else{
+            currentUVI.classList.add('uvDanger');
+          }
     })
 
         .catch(function (err) {
