@@ -90,15 +90,15 @@ function getForecast(searchInputVal) {
         forecast.html(' ');
         for (let i = 0; i < response.list.length; i++) {
             let days = response.list[i].dt;
-            let date = moment.unix('').format("MM/DD/YYYY");
+            let date = moment.unix(days).format("MM/DD/YYYY");
 
-            forecast.append(`<div class="col mx-4">
+            forecast.append(`<div class="col-2.5 mx-3">
             <div class="card" id="five-day-forecast">
               <div class="card-body">
                 <h5 class="card-title" id="future-day">${date}</h5>
-                <p class="card-text temp">Temp: ${response.list[i].main.temp}  °F</p>
-                <p class="card-text wind">Wind: ${response.list[i].wind.speed} mph</p>
-                <p class="card-text humi">Humidity: ${response.list[i].main.humidity} %</p>
+                <p class="card-text temp">Temp: ${response.list[i].main.temp} °F</p>
+                <p class="card-text wind">Wind: ${response.list[i].wind.speed}mph</p>
+                <p class="card-text humi">Humidity: ${response.list[i].main.humidity}%</p>
               </div>
             </div>
           </div>`)
