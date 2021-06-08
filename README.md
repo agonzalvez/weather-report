@@ -8,8 +8,11 @@ This application will allow the user to enter a location(city) of their choice, 
 - Linked all files accordingly
 - Created divs for all rows and columns
 - Formatted all applicable classes to "row" so I could later format to a GRID layout
-- Added momentjs on javascript file to display the current day and date on the header
-- Linked all third-party APIs, including Open Weather, Bootstrap, jQuery, and Font Awesome
+- Added moment.js on javascript file to display the current day and date on the header
+- Linked all third-party APIs, including Open Weather, Moment.js Bootstrap, jQuery, and Font Awesome
+- Created function to obtain current temperature, wind speed, humidity and UV index
+- Created function where recently searched cities will be rendered on the Search History section
+- Created function to dynamically generated cards for a five-day forecast
 
 ## Usage:
 
