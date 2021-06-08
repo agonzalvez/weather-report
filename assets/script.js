@@ -46,6 +46,10 @@ function getWeather() {
         let lat = response.coord.lat;
         let lon = response.coord.lon;
 
+        const image = document.createElement('img');
+        image.src = "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png"
+        $('.selectedCity').append(image);
+
         console.log(response);
         console.log(response.name);
         console.log(response.main.temp);
@@ -92,10 +96,12 @@ function getForecast(searchInputVal) {
             let days = response.list[i].dt;
             let date = moment.unix(days).format("MM/DD/YYYY");
 
+            var weathIconDisplay = "https://openweathermap.org/img/w/" + response.list[i].weather[0].icon + ".png";
+
             forecast.append(`<div class="col-2.5 mx-3">
             <div class="card" id="five-day-forecast">
               <div class="card-body">
-                <h5 class="card-title" id="future-day">${date}</h5>
+                <img src= ${weathIconDisplay}>
                 <p class="card-text temp">Temp: ${response.list[i].main.temp} °F</p>
                 <p class="card-text wind">Wind: ${response.list[i].wind.speed}mph</p>
                 <p class="card-text humi">Humidity: ${response.list[i].main.humidity}%</p>
@@ -107,4 +113,7 @@ function getForecast(searchInputVal) {
     }).catch(function (err) {
         console.error(err);
     });
+
+
+    // <h5 class="card-title" id="future-day">${date}</h5>
 }
